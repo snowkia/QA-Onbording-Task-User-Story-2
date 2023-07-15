@@ -10,12 +10,12 @@ Scenario: Add language record with valid details
 	Then New record with '<Language>' and '<Level>' are added successfully
 
 	Examples:
-	| Language	| Level                  |
-	| French	| Fluent                 |
-	| Tamil     | Choose Language Level  |
-	|           | Choose Language Level  |
-	| G*^54Hl   | Conversational	     |
-	|			| Basic					 |
+	| Language | Level                 |
+	| Greek    | Fluent                |
+	| Mandarin | Choose Language Level |
+	|          | Choose Language Level |
+	| WASD123  | Conversational        |
+	| English  | Basic                 |
 
 	@order(2)
 	Scenario Outline: Update existing language record with valid details
@@ -24,12 +24,12 @@ Scenario: Add language record with valid details
 	Then The record should been updated '<Language>' and '<Level>' successfully
 
 	Examples: 
-	| Language | Level				|
-	| Spanish  | Fluent				|
-	| Hindi		| Fluent			|
-	|		   | Language Level		|
-	| French   | Language Level		|
-	| $% 673E  | Native/Bilingual	|
+	| Language | Level					|
+	| Greek		| Fluent				|
+	| Mandarin	| Fluent				|
+	|			| Language Level		|
+	| French	| Language Level		|
+	| WASD123	| Native/Bilingual		|
 	
 
 	@order(3)
@@ -39,8 +39,8 @@ Scenario: Add language record with valid details
 	Then The record '<Language>' and '<Level>' should be deleted successfully
 
 	Examples: 
-	| Language | Level          |
-	| Hindi    | Basic			|
+	| Language | Level |
+	| English  | Basic |
 
 	
 
